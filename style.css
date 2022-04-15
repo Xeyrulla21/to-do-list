@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 body {
-    box-sizing: border-box;
     font-family: 'Roboto';
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./7806065.webp);
 }
 
 .card {
     width: 336px;
-    margin: 50px auto;
+    margin: 150px auto;
     border-radius: 10px;
     height: max-content;
+    background-color: white;
     border: 1px solid #C4C4C4;
 }
 
@@ -81,23 +85,27 @@ input {
 
 .add-btn {
     width: 60%;
-    margin: auto;
     display: flex;
-    color: white;
-    border-radius: 71px;
+    border-radius: 70px;
     flex-direction: row;
+    margin: 50px auto 20px auto;
     justify-content: start;
     background-color: #833AE0;
 }
 
-.add-btn .btn-name {
-    margin: auto;
-}
-
 .add-btn .plus {
+    height: 35px;
+    border: none;
+    color: white;
+    cursor: pointer;
     padding: 10px 15px;
     border-radius: 50px;
     background: #9953F1;
+}
+
+.add-btn .btn-name {
+    margin: auto;
+    color: white;
 }
 
 .add-btn:hover {
