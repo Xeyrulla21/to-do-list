@@ -61,11 +61,7 @@ class TodoService {
   }
 
   sortTodos(direction = true) {
-    const todos = [...this._todos]
-      .filter((t) => t.title)
-      .sort((t1, t2) =>
-        t1.title.toUpperCase() > t2.title.toUpperCase() ? 1 : -1
-      );
+    const todos = [...this._todos].filter((t) => t.title).sort((t1, t2) => t1.title.toUpperCase() > t2.title.toUpperCase() ? 1 : -1);
     if (!direction) todos.reverse();
     this._todos = todos;
     this._commit();
@@ -81,9 +77,7 @@ class TodoService {
   }
 
   _generateId() {
-    return this._todos?.length
-      ? [...this._todos].sort((t1, t2) => t2.id - t1.id)[0].id + 1
-      : 1;
+    return this._todos?.length ? [...this._todos].sort((t1, t2) => t2.id - t1.id)[0].id + 1 : 1;
   }
 
   _getIndex(id) {
@@ -106,12 +100,12 @@ class DOMManipulator {
   }
 
   _init() {
-    this._todoList = this._getElement("#todo-list");
+    this._todoList = this._getElement(".todo-list");
 
-    this._addBtn = this._getElement("#add-btn");
+    this._addBtn = this._getElement(".add-btn");
     this._addBtn.addEventListener("click", (_) => this._itemsAdd());
 
-    this._sortBtn = this._getElement("#sort-btn");
+    this._sortBtn = this._getElement(".sort-btn");
     this._sortBtn.addEventListener("click", (_) => this._itemsSort());
     this._sortDir = true;
 
