@@ -47,7 +47,7 @@ class TodoService {
   }
 
   editTodo(id, title) {
-    if (!title) throw new Error("You can not empty title.");
+    if (!title) throw new Error("EMPTY TITLE");
     const todos = [...this._todos];
     todos[this._getIndex(id)].title = title.trim();
     this._todos = todos;
