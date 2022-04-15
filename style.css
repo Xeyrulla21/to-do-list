@@ -9,7 +9,7 @@ body {
 
 .card {
     width: 336px;
-    margin: 150px auto;
+    margin: 70px auto;
     border-radius: 10px;
     height: max-content;
     background-color: white;
@@ -18,9 +18,19 @@ body {
 
 .bar {
     width: 100%;
-    height: 28px;
-    background: #FFDC40;
+    height: 36px;
+    background-color: #FFDC40;
     border-radius: 10px 10px 0 0;
+}
+
+.bar:hover {
+    animation-name: example;
+    animation-duration: 3s;
+}
+
+@keyframes example {
+    from {background-color: #FFDC40;}
+    to {background-color: teal;}
 }
 
 .container {
@@ -28,7 +38,7 @@ body {
 }
 
 .container h2 {
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 900;
     line-height: 30px;
     text-align: center;
@@ -69,9 +79,9 @@ input {
 }
 
 .del-btn {
-    border: none;
     width: 20px;
     height: 20px;
+    border: none;
     position: relative;
     top: 8px;
     right: 6px;
@@ -88,8 +98,8 @@ input {
     display: flex;
     border-radius: 70px;
     flex-direction: row;
-    margin: 50px auto 20px auto;
     justify-content: start;
+    margin: 50px auto 20px auto;
     background-color: #833AE0;
 }
 
