@@ -79,14 +79,14 @@ input {
 }
 
 #add-btn {
-    color: white;
-    display: flex;
-    flex-direction: row;
-    border-radius: 71px;
-    background-color: #833AE0;
-    justify-content: start;
     width: 60%;
-    margin: auto
+    margin: auto;
+    display: flex;
+    color: white;
+    border-radius: 71px;
+    flex-direction: row;
+    justify-content: start;
+    background-color: #833AE0;
 }
 
 #add-btn #btn-name {
