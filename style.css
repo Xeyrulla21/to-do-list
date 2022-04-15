@@ -69,6 +69,7 @@ input {
     height: 20px;
     position: relative;
     top: 8px;
+    right: 6px;
     border-radius: none;
     background-color: initial;
 }
