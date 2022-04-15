@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.card {
+    width: 336px;
+    margin: 50px auto;
+    border-radius: 10px;
+    height: max-content;
+    border: 1px solid #C4C4C4;
+}
+
+#bar {
+    width: 100%;
+    height: 28px;
+    background: #FFDC40;
+    border-radius: 10px 10px 0 0;
+}
+
+.container {
+    padding: 4% 8%;
+}
+
+.container h2 {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 30px;
+    text-align: center;
+}
+
+#sort-btn {
+    border: none;
+    margin-left: 240px;
+    border-radius: none;
+    background-color: initial;
+}
+
+#sort-btn svg:hover *{
+    fill: black;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    border: 1px solid #C4C4C4;
+}
+
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    width: 500px;
+    padding: 3px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.del-btn {
+    border: none;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 8px;
+    border-radius: none;
+    background-color: initial;
+}
+
+.del-btn svg:hover *{
+    fill: #833AE0;
+}
+
+#add-btn {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 71px;
+    background-color: #833AE0;
+    justify-content: start;
+    width: 60%;
+    margin: auto
+}
+
+#add-btn #btn-name {
+    margin: auto;
+}
+
+#add-btn #plus {
+    padding: 10px 15px;
+    border-radius: 50px;
+    background: #9953F1;
+}
+
+#add-btn:hover {
+    background: #535df1;
+    transition-delay: 0.2s;
+    transition-duration: 0.5s;
+}
