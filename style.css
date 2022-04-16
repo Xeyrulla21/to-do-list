@@ -24,24 +24,26 @@ body {
 }
 
 .bar:hover {
-    animation-name: example;
-    animation-duration: 3s;
-}
-
-@keyframes example {
-    from {background-color: #FFDC40;}
-    to {background-color: teal;}
+    transition: 0.5s;
+    background-color: teal;
 }
 
 .container {
     padding: 4% 8%;
 }
 
-.container h2 {
+ h2 {
+    color: #9953F1;
     font-size: 30px;
     font-weight: 900;
     line-height: 30px;
     text-align: center;
+}
+
+h2:hover {
+    font-size: 35px;
+    transition: 0.5s;
+    color: #833AE0;
 }
 
 .sort-btn {
@@ -53,7 +55,7 @@ body {
 }
 
 .sort-btn svg:hover *{
-    fill: black;
+    fill: #833AE0;
 }
 
 .todo-list {
@@ -76,6 +78,10 @@ input {
     margin-top: 10px;
     font-size: 18px;
     font-weight: 400;
+}
+
+ul:hover {
+    box-shadow: 2px 2px 4px 4px #C4C4C4;
 }
 
 .del-btn {
@@ -110,7 +116,7 @@ input {
     cursor: pointer;
     padding: 10px 15px;
     border-radius: 50px;
-    background: #9953F1;
+    background-color: #9953F1;
 }
 
 .add-btn .btn-name {
@@ -119,7 +125,8 @@ input {
 }
 
 .add-btn:hover {
-    background: #535df1;
-    transition-delay: 0.2s;
-    transition-duration: 0.5s;
+    width: 75%;
+    transition: 0.5s;
+    box-shadow: 0 0 0 4px #FFDC40;
+    background: linear-gradient(90deg, #833AE0, teal);
 }
