@@ -43,7 +43,12 @@ body {
 h2:hover {
     font-size: 35px;
     transition: 0.5s;
-    color: #833AE0;
+    animation-name: example;
+}
+
+@keyframes example {
+    from {color: #9953F1;}
+    to {color: teal;}
 }
 
 .sort-btn {
