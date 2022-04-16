@@ -4,7 +4,7 @@ body {
     box-sizing: border-box;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(./7806065.webp);
+    background-image: url(./photo/7806065.webp);
 }
 
 .card {
@@ -43,6 +43,7 @@ body {
 h2:hover {
     font-size: 35px;
     transition: 0.5s;
+    animation-duration: 4s;
     animation-name: example;
 }
 
