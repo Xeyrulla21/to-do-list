@@ -56,7 +56,6 @@ h2:hover {
     border: none;
     cursor: pointer;
     margin-left: 240px;
-    border-radius: none;
     background-color: initial;
 }
 
@@ -97,7 +96,6 @@ ul:hover {
     position: relative;
     top: 8px;
     right: 6px;
-    border-radius: none;
     background-color: initial;
 }
 
